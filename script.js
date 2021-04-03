@@ -165,3 +165,21 @@ function twelveOClock() {
     }
   }
   oneOClock()
+
+  function twoOClock() {
+    var textBox2 = document.getElementById("event2pm");
+    var outTextBox2 = document.getElementById("event2pm");
+    var saveBtn = document.getElementById("button2");
+  
+    saveBtn.addEventListener("click", updateEvent2);
+  
+    outTextBox2.textContent = localStorage.getItem("content2");
+    textBox2.value = localStorage.getItem("content2");
+  
+    function updateEvent2() {
+        localStorage.setItem("content2", textBox2.value);
+  
+        outTextBox2.textContent = textBox2.value;
+    }
+  }
+  twoOClock()
