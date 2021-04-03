@@ -155,13 +155,13 @@ function twelveOClock() {
   
     savebtn.addEventListener("click", updateEvent1);
   
-    outTextBox1.textContent = localStorage.getItem("content1");
+    outTextBox1.innerHTML = localStorage.getItem("content1");
     textBox1.value = localStorage.getItem("content1");
   
     function updateEvent1() {
       localStorage.setItem("content1", textBox1.value);
   
-      outTextBox1.textContent = textBox1.value;
+      outTextBox1.innerHTML = textBox1.value;
     }
   }
   oneOClock()
@@ -173,13 +173,67 @@ function twelveOClock() {
   
     saveBtn.addEventListener("click", updateEvent2);
   
-    outTextBox2.textContent = localStorage.getItem("content2");
+    outTextBox2.innerHTML = localStorage.getItem("content2");
     textBox2.value = localStorage.getItem("content2");
   
     function updateEvent2() {
         localStorage.setItem("content2", textBox2.value);
   
-        outTextBox2.textContent = textBox2.value;
+        outTextBox2.innerHTML = textBox2.value;
     }
   }
   twoOClock()
+
+  function threeOClock() {
+    var textBox3 = document.getElementById("event3pm");
+    var outTextBox3 = document.getElementById("event3pm");
+    var saveBtn = document.getElementById("button3");
+  
+    saveBtn.addEventListener("click", updateEvent3);
+  
+    outTextBox3.textContent = localStorage.getItem("content3");
+    textBox3.value = localStorage.getItem("content3");
+  
+    function updateEvent3() {
+      localStorage.setItem("content3", textBox3.value);
+  
+      outTextBox3.textContent = itextBox3.value;
+    }
+  }
+  threeOClock()
+
+  function fourOClock() {
+    var textBox4 = document.getElementById("event4pm");
+    var outBox4 = document.getElementById("event4pm");
+    var saveBtn = document.getElementById("button4");
+  
+    saveBtn.addEventListener("click", updateEvent4);
+  
+    outBox4.innerHTML = localStorage.getItem("content4");
+    textBox4.value = localStorage.getItem("content4");
+  
+    function updateEvent4() {
+      localStorage.setItem("content4", textBox4.value);
+  
+      outBox4.innerHTML = textBox4.value;
+    }
+  }
+  fourOClock()
+
+  function fiveOClock() {
+    var textBox5 = document.getElementById("event5pm");
+    var outBox5 = document.getElementById("event5pm");
+    var saveBtn = document.getElementById("button5");
+  
+    saveBtn.addEventListener("click", updateOutput9);
+  
+    outBox5.textContent = localStorage.getItem("content5");
+    textBox5.value = localStorage.getItem("content5");
+  
+    function updateOutput9() {
+      localStorage.setItem("content5", textBox5.value);
+  
+      outBox5.textContent = textBox5.value;
+    }
+  }
+  fiveOClock()
