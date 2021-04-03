@@ -10,11 +10,11 @@ function nineOClock() {
   
     saveBtn.addEventListener("click", newEvent);
   
-    outTextBox.innerHTML = localStorage.getItem("content");
-    textBox.value = localStorage.getItem("content");
+    outTextBox.innerHTML = localStorage.getItem("content9");
+    textBox.value = localStorage.getItem("content9");
   
     function newEvent() {
-      localStorage.setItem("content", textBox.value);
+      localStorage.setItem("content9", textBox.value);
   
       outTextBox.innerHTML = textBox.value;
     }
@@ -22,8 +22,23 @@ function nineOClock() {
   // calling the function
 nineOClock()
 
+function tenOClock(){
+    var textBox10 = document.getElementById("event10");
+    var outTextBox10 = document.getElementById("event10");
+    var saveBtn10 = document.getElementById("button10");
 
+    saveBtn10.addEventListener("click", newEvent);
 
+    outTextBox10.innerHTML = localStorage.getItem("content10");
+    TextBox10.value = localStorage.getItem("content10");
+
+    function newEvent(){
+        localStorage.setItem("content10", textBox10.value);
+
+        outTextBox10.innerHTML = textBox10.value;
+    }
+}
+tenOClock()
 
 
 
