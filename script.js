@@ -40,6 +40,24 @@ function tenOClock(){
 }
 tenOClock()
 
+function elevenOClock(){
+    var textBox11 = getElementById("event11");
+    var outTextBox11 = getElementById("event11");
+    var saveBtn11 = getElementById("event11");
+
+    saveBtn11.addEventListener("click", newEvent);
+
+    outTextBox11.innerHTML = localStorage.getItem("content11");
+    textBox11.value = localStorage.getItem("content11");
+
+    function newEvent(){
+
+        localStorage.setItem("content11", textBox11.value);
+        outTextBox11.innerHTML = textBox11.value;
+    }
+}
+elevenOClock()
+
 
 
 
