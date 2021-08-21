@@ -5,6 +5,7 @@ Created a easy calendar web application to log your day to day tasks to keep you
 ## Table of Contents
   - [View-it-Here](#View-it-Here)
   - [ScreenShot](#Screenshot)
+  - [Installation](#Installation)
 
 ## Created with : <br>
 ・VS Code <br>
@@ -16,6 +17,10 @@ Created a easy calendar web application to log your day to day tasks to keep you
 ・javascript <br>
 ・jquery <br>
 ・moment.js
+
+## Installation
+* first, forked the repo <br>
+* Second, cloned the repo to your local computer
 
 ## View it Here
 [Link to Site](https://jesse2360.github.io/wk5Scheduler/)
