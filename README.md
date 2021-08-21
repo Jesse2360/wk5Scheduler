@@ -19,6 +19,7 @@ Created a easy calendar web application to log your day to day tasks to keep you
 ・moment.js
 
 ## Installation
+If you want to edit and make it your own: <br>
 * first, fork the repo <br>
 * Second, cloned the repo to your local computer
 
